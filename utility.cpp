@@ -14,3 +14,11 @@ void point::translate(int x, int y){
   this -> x += x;
   this -> y += y;
 }
+
+int point::GetX(){
+  return this -> x;
+}
+
+int point::GetY(){
+  return this -> y;
+}
