@@ -25,11 +25,11 @@ void point::translate(int x, int y){
   this -> y += y;
 }
 
-int point::GetX(){
+int point::GetX() const{
   return this -> x;
 }
 
-int point::GetY(){
+int point::GetY() const{
   return this -> y;
 }
 
