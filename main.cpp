@@ -1,5 +1,6 @@
 #include <iostream>
 #include "point.h"
+#include "forme.h"
 
 using namespace std;
 
@@ -16,6 +17,11 @@ int main(){
 
   *p1 += *p2;
   cout << "Point p1 + p2, p1 = " << *p2 <<endl;
+
+  forme * f = new forme(new point(34, 54));
+  cout << "forme 1 : " << forme << endl;
+  *f += new point(34, 76);
+  cout << "forme 1 translatée de x34 et y76 : " << forme << endl;
 
   delete(p1);
   delete(p2);
