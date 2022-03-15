@@ -10,7 +10,7 @@ point::point(){
   this -> y = 0;
 }
 
-point::point(point * p){
+point::point(const point * p){
   this -> x = p -> GetX();
   this -> y = p -> GetY();
 }
