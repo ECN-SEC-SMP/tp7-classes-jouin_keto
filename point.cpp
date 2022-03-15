@@ -1,5 +1,6 @@
 #include "point.h"
 
+
 point::point(int x, int y){
   this -> x = x;
   this -> y = y;

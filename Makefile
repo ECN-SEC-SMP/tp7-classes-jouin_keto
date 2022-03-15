@@ -1,3 +1,8 @@
+all: main.out
+
+run : main.out
+  ./main.out 
+
 main.out: main.o point.o 
 	g++ -o main.out main.o point.o
 
@@ -6,3 +11,4 @@ main.o: main.cpp
 
 point.o: point.cpp
 	g++ -c point.cpp
+
