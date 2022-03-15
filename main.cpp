@@ -14,6 +14,9 @@ int main(){
   cout << "Point p2 x = " << p2 -> GetX() << ", y = " << p2 -> GetY() <<endl;
   cout << "Point p3 x = " << p3 -> GetX() << ", y = " << p3 -> GetY() <<endl;
 
+  *p1 += *p2;
+  cout << "Point p1 + p2, p1 = " << *p2 <<endl;
+
   delete(p1);
   delete(p2);
   delete(p3);

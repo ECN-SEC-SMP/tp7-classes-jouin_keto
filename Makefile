@@ -1,8 +1,5 @@
 all: main.out
 
-run : main.out
-  ./main.out 
-
 main.out: main.o point.o 
 	g++ -o main.out main.o point.o
 

@@ -42,7 +42,12 @@ void point::SetY(int y){
   this -> y = y;
 }
 
+void point::operator+=(point const & p){
+  this -> x += p.GetX();
+  this -> y += p.GetY();
+}
+
 ostream& operator<<(ostream & s, point const & p){
-  s << "x : "<< p.GetX()<<", y : " << p.GetY();
+  s << "(x : "<< p.GetX()<<", y : " << p.GetY() << ")";
   return s;
 }

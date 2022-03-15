@@ -25,6 +25,7 @@ class point{
   void SetY(int y);
 
   //Surcharge opérateur
+  void operator+=(point const & p);
 };
 ostream& operator<<(ostream & s, point const & p);
 
