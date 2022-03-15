@@ -14,19 +14,22 @@ class forme{
   forme(point * p);
   virtual float surface()=0;
   virtual float perimetre()=0;
-  void operator+=(point const & p);
   point * GetP() const;
 };
 
-ostream& operator<<(ostream & s, point const & p);
-
 // test creation fille
 class rectangle : public forme{
+  private:
+  int largeur, hauteur;
 
   public :
   rectangle(point * p1, point * p2);
+  rectangle(point * p, int largeur, int hauteur);
+  point points[4];
   virtual float surface();
   virtual float perimetre();
+  void operator+=(point const & p);
 };
 
+ostream& operator<<(ostream & s, rectangle const & r);
 #endif

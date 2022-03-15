@@ -18,12 +18,13 @@ int main(){
   *p1 += *p2;
   cout << "Point p1 + p2, p1 = " << *p2 <<endl;
 
-  /*
-  rectangle * f = new rectangle(new point(34, 54));
-  cout << "forme 1 : " << f << endl;
-  *f += new point(34, 76);
-  cout << "forme 1 translatée de x34 et y76 : " << f << endl;
-*/
+  rectangle * f = new rectangle(new point(0, 10), new point(20, 0));
+  cout << "forme 1 : " << *f << endl;
+  point pt(34, 76); 
+  //*f += new point(34, 76);
+  *f += pt;
+  cout << "forme 1 translatée de x34 et y76 : " << *f << endl;
+  
   delete(p1);
   delete(p2);
   delete(p3);
