@@ -1,8 +1,8 @@
-main.out: compte.o mainCompte.o 
-	g++ -o main.out compte.o mainCompte.o
+main.out: main.o utility.o 
+	g++ -o main.out main.o utility.o
 
-compte.o: compte.cpp
-	g++ -c compte.cpp
+main.o: main.cpp
+	g++ -c main.cpp
 
-mainCompte.o: mainCompte.cpp
-	g++ -c mainCompte.cpp
+utility.o: utility.cpp
+	g++ -c utility.cpp

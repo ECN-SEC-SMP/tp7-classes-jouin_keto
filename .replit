@@ -1,2 +1,2 @@
-language = "bash"
-run = "Makefile"
+language = "cpp"
+run = "make"
