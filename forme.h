@@ -8,7 +8,7 @@ using namespace std;
 
 class forme{
   private :
-  point * point;
+  point * p;
 
   public :
   forme(point * p);
