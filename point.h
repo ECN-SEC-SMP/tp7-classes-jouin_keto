@@ -1,9 +1,9 @@
+#ifndef point_h
+#define point_h
+
 #include <iostream>
 
 using namespace std;
-
-#ifndef utility_h
-#define utility_cpp
 
 class point{
   private:
@@ -28,6 +28,5 @@ class point{
   void operator+=(point const & p);
 };
 ostream& operator<<(ostream & s, point const & p);
-
 
 #endif

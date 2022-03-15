@@ -1,10 +1,10 @@
+#ifndef forme_h
+#define forme_h
+
 #include <iostream>
 #include "point.h"
 
 using namespace std;
-
-#ifndef forme_h
-#define forme_h
 
 class forme{
   private :
