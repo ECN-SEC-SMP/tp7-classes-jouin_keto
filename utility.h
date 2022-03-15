@@ -9,8 +9,10 @@ class point{
   private:
   int x, y;
   public:
-  //Constructeur
-  point(int x = 0, int y = 0);
+  //Constructeurs
+  point(int x = 0, int y = 0); 
+  point(point * p);
+  point();
 
   //Méthodes
   void translate(int x, int y);
