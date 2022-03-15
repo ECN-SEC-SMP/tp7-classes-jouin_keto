@@ -9,11 +9,13 @@ using namespace std;
 class forme{
   private :
   point * p;
-
+  
   public :
+  forme(point * p);
   virtual float surface()=0;
   virtual float perimetre()=0;
   void operator+=(point const & p);
+  point * GetP() const;
 };
 
 ostream& operator<<(ostream & s, point const & p);
@@ -22,10 +24,9 @@ ostream& operator<<(ostream & s, point const & p);
 class rectangle : public forme{
 
   public :
-  rectangle(point * p);
+  rectangle(point * p1, point * p2);
   virtual float surface();
   virtual float perimetre();
 };
-
 
 #endif

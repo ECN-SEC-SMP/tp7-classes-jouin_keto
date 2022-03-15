@@ -1,17 +1,33 @@
 #include "forme.h"
 
 void forme::operator+=(point const & p){
-  this -> point -> SetX(p.GetX());
-  this -> point -> SetY(p.GetY());
+  this -> p -> SetX(p.GetX());
+  this -> p -> SetY(p.GetY());
+}
+
+point * forme::GetP() const{
+  return this -> p;
+}
+
+forme::forme(point * p){
+  this -> p = p;
 }
 
 ostream& operator<<(ostream & s, forme const & f){
-  s << "(x : "<< f.point.GetX()<<", y : " << f.point.GetY() << ")";
+  point * cp = f.GetP();
+  s << "(x : "<< cp -> GetX()<<", y : " << cp -> GetY() << ")";
   return s;
 }
 
-rectange::rectangle(point const & p1, point const & p2) : forme { 
-  point * p3 = new point (p1.GetX, p2.GetY);
-  point * p4 = new point (p1.GetY, p2.GetX);
-  
+rectangle::rectangle(point * p1, point * p2) : forme(new point()) {
+  point * p3 = new point (p1 -> GetX(), p2 -> GetY());
+  point * p4 = new point (p1 -> GetY(), p2 -> GetX());
+}
+
+float rectangle::perimetre(){
+  return 0;
+}
+
+float rectangle::surface(){
+  return 0;
 }
