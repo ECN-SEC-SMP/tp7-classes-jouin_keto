@@ -11,7 +11,7 @@ class point{
   public:
   //Constructeurs
   point(int x, int y); 
-  point(const point * p);
+  point(point * p);
   point();
 
   //Méthodes

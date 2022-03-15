@@ -1,8 +1,8 @@
-main.out: main.o utility.o 
-	g++ -o main.out main.o utility.o
+main.out: main.o point.o 
+	g++ -o main.out main.o point.o
 
 main.o: main.cpp
 	g++ -c main.cpp
 
-utility.o: utility.cpp
-	g++ -c utility.cpp
+point.o: point.cpp
+	g++ -c point.cpp

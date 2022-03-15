@@ -1,4 +1,4 @@
-#include "utlity.h"
+#include "point.h"
 
 point::point(int x, int y){
   this -> x = x;
@@ -10,14 +10,14 @@ point::point(){
   this -> y = 0;
 }
 
-point::point(const point * p){
+point::point(point * p){
   this -> x = p -> GetX();
   this -> y = p -> GetY();
 }
 
 void point::translate(point * p){
   this -> x += p -> GetX();
-  this -> y += P -> GetY();
+  this -> y += p -> GetY();
 }
 
 void point::translate(int x, int y){
@@ -33,10 +33,10 @@ int point::GetY(){
   return this -> y;
 }
 
-void SetX(int x){
+void point::SetX(int x){
   this -> x = x;
 }
 
-void SetY(int y){
+void point::SetY(int y){
   this -> y = y;
 }
