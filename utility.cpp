@@ -32,3 +32,11 @@ int point::GetX(){
 int point::GetY(){
   return this -> y;
 }
+
+void SetX(int x){
+  this -> x = x;
+}
+
+void SetY(int y){
+  this -> y = y;
+}

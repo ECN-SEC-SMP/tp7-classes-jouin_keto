@@ -21,5 +21,7 @@ class point{
   //Getters/Setters
   int GetX();
   int GetY();
+  void SetX(int x);
+  void SetY(int y);
 };
 
