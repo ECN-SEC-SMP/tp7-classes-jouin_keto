@@ -23,3 +23,4 @@ class point{
   int GetY();
 };
 
+#endif
