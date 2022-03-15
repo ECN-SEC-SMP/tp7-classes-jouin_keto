@@ -10,7 +10,7 @@ class point{
   int x, y;
   public:
   //Constructeurs
-  point(int x = 0, int y = 0); 
+  point(int x, int y); 
   point(const point * p);
   point();
 
@@ -25,3 +25,4 @@ class point{
   void SetY(int y);
 };
 
+#endif
