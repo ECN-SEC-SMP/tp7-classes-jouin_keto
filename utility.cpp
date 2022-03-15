@@ -5,8 +5,9 @@ point::point(int x = 0, int y = 0){
   this -> y = y;
 }
 
-void point::translate(point p){
-  
+void point::translate(point * p){
+  this -> x += p -> GetX();
+  this -> y += P -> GetY();
 }
 
 void point::translate(int x, int y){

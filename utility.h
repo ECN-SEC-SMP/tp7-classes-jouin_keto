@@ -14,7 +14,7 @@ class point{
 
   //Méthodes
   void translate(int x, int y);
-  void translate(point p);
+  void translate(point * p);
 
   //Getters/Setters
   int GetX();
