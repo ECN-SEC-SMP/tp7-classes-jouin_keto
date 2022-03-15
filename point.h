@@ -23,6 +23,11 @@ class point{
   int GetY();
   void SetX(int x);
   void SetY(int y);
+
+  //Surcharge opérateur
+  ostream& operator<<(ostream & s, point * p);
 };
+
+
 
 #endif

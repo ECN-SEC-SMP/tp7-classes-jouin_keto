@@ -40,3 +40,8 @@ void point::SetX(int x){
 void point::SetY(int y){
   this -> y = y;
 }
+
+ostream& operator<<(ostream & s, point * p){
+  s << "x : "<< p -> GetX()<<", y : " << p -> GetY();
+  return s;
+}
