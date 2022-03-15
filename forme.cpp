@@ -18,5 +18,4 @@ rectange::rectangle(point const & p1, point const & p2) : forme {
   point * p3 = new point (p1.GetX, p2.GetY);
   point * p4 = new point (p1.GetY, p2.GetX);
   
-
 }
