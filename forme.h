@@ -12,6 +12,10 @@ class forme{
 
   public :
   forme(point * p);
+
+  void operator+=(point const & p);
 };
+
+ostream& operator<<(ostream & s, point const & p);
 
 #endif
