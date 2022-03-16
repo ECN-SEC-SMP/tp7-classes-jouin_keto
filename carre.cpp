@@ -9,12 +9,12 @@ carre::carre(point * p, int cote) : forme(){
   this -> points[3] = new point(p -> GetX(), p -> GetY() + cote);
 }
 
-float carre::surface(){
-  
+int carre::surface(){
+  return (this -> cote) * (this -> cote);
 }
 
-float carre::perimetre(){
-  
+int carre::perimetre(){
+  return (this -> cote) * 4;
 }
 
 void carre::operator+=(point const & p){

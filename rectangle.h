@@ -14,8 +14,8 @@ class rectangle : public forme{
   public :
   rectangle(point * p, int largeur, int hauteur);
   point points[4];
-  virtual float surface();
-  virtual float perimetre();
+  virtual int surface();
+  virtual int perimetre();
   void operator+=(point const & p);
 };
 

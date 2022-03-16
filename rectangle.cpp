@@ -21,12 +21,12 @@ rectangle::rectangle(point * p, int largeur, int hauteur) : forme(){
   this -> points[3] = new point(p -> GetX(), p -> GetY() + hauteur);
 }
 
-float rectangle::perimetre(){
-  return 0;
+int rectangle::perimetre(){
+  return (this -> largeur * 2) + (this -> hauteur * 2);
 }
 
-float rectangle::surface(){
-  return 0;
+int rectangle::surface(){
+  return (this -> largeur) * (this -> hauteur);
 }
 
 ostream& operator<<(ostream & s, rectangle const & r){

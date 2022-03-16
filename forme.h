@@ -13,8 +13,8 @@ class forme{
   public :
   forme(point * p);
   forme();
-  virtual float surface()=0;
-  virtual float perimetre()=0;
+  virtual int surface()=0;
+  virtual int perimetre()=0;
   point * GetP() const;
 };
 

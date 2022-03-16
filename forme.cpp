@@ -9,6 +9,6 @@ forme::forme(point * p){
 }
 
 forme::forme(){
-  
+  this -> p = new point();
 }
 
