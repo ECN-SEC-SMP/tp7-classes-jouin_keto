@@ -23,13 +23,15 @@ int main(){
   cout << "rectangle : " << *r << endl; 
   *r += *(new point(34, 76));  //fonction de translation
   cout << "rectangle translatée de x34 et y76 : " << *r << endl;
-  cout << "périmètre du rectangle : " << r -> perimetre() << ", surface du rectangle : " << r -> surface() << endl;
+  cout << "périmètre du rectangle : " << r -> perimetre();
+  cout << ", surface du rectangle : " << r -> surface() << endl;
 
-  carre * c = new carre(new point(20,20), 33);
+  carre * c = new carre(new point(20,20), 10);
   cout << "carré : " << *c << endl;
   *c += *(new point(45,67));
   cout << "carré translaté de x45, y67 : " << *c << endl; 
-  cout << "périmètre du carré : " << c -> perimetre() << ", surface du carré : " << c -> surface() << endl;
+  cout << "périmètre du carré : " << c -> perimetre();
+  cout << ", surface du carré : " << c -> surface() << endl;
   
   delete(p1);
   delete(p2);

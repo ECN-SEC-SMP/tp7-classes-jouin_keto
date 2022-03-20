@@ -18,8 +18,8 @@ class carre : public forme{
   carre(point * p, int cote);
 
   //Méthodes
-  virtual int surface();
-  virtual int perimetre();
+  int surface();
+  int perimetre();
   void operator+=(point const & p);
 };
 
